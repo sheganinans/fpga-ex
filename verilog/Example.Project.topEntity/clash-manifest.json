@@ -1,0 +1,94 @@
+{
+    "components": [
+        "topEntity"
+    ],
+    "dependencies": {
+        "transitive": []
+    },
+    "version": "unstable",
+    "top_component": {
+        "name": "topEntity",
+        "ports_flat": [
+            {
+                "direction": "in",
+                "domain": "System",
+                "name": "clk",
+                "width": 1,
+                "is_clock": true,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "name": "rst",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "domain": "System",
+                "name": "en",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "in",
+                "name": "c$arg",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            },
+            {
+                "direction": "out",
+                "name": "result",
+                "width": 1,
+                "is_clock": false,
+                "type_name": ""
+            }
+        ]
+    },
+    "domains": {
+        "IntelSystem": {
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        },
+        "XilinxSystem": {
+            "reset_kind": "Synchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        },
+        "System": {
+            "reset_kind": "Asynchronous",
+            "active_edge": "Rising",
+            "period": 10000,
+            "init_behavior": "Defined",
+            "reset_polarity": "ActiveHigh"
+        }
+    },
+    "flags": [
+        20,
+        20
+    ],
+    "hash": "16adac49f9531678a03990c018984a19e86e130765a4dc8cc31ccc74cafcbe8b",
+    "files": [
+        {
+            "name": "topEntity_shim.cpp",
+            "sha256": "460702d8afc7479b65dad3acb826f56baf7e34f11fea519fb6f597a0c8340150"
+        },
+        {
+            "name": "topEntity.sdc",
+            "sha256": "13d4c1aafcc09a84d81d3b60d513cb901384a10e27e5a5a16572a600f15895f3"
+        },
+        {
+            "name": "topEntity.v",
+            "sha256": "eefc49dc30132c605c76defa5c86835320537aa6db317d29ff5caea392be7fd5"
+        }
+    ]
+}

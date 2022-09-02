@@ -1,0 +1,4 @@
+packages:
+  freq-div.cabal
+
+write-ghc-environment-files: always

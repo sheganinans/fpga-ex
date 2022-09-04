@@ -62,5 +62,6 @@ test =
   print
     ( L.repeat (initState, initState)
         & simulate @System mmul
-        & L.take 24
+        & L.take 2
+        & L.drop 1
     )

@@ -11,11 +11,11 @@ topEntity ::
   Clock System ->
   Reset System ->
   Enable System ->
-  Signal System (Unsigned 3, Unsigned 8) ->
+  Signal System (Index 8, Unsigned 8) ->
   Signal System Bool
 topEntity = exposeClockResetEnable bitOfByte
 
-bitAt :: Unsigned 3 -> Unsigned 8 -> Bool
+bitAt :: Index 8 -> Unsigned 8 -> Bool
 bitAt 0 $(bitPattern "1.......") = True
 bitAt 1 $(bitPattern ".1......") = True
 bitAt 2 $(bitPattern "..1.....") = True
@@ -26,7 +26,7 @@ bitAt 6 $(bitPattern "......1.") = True
 bitAt 7 $(bitPattern ".......1") = True
 bitAt _ _ = False
 
-bitOfByte :: HiddenClockResetEnable dom => Signal dom (Unsigned 3, Unsigned 8) -> Signal dom Bool
+bitOfByte :: HiddenClockResetEnable dom => Signal dom (Index 8, Unsigned 8) -> Signal dom Bool
 bitOfByte =
   moore
     (\_ inp -> inp)

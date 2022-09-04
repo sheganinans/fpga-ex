@@ -1,6 +1,6 @@
 <!-- omit in toc -->
-# Frequency Divider
-A frequency divider implemented in [Clash](https://clash-lang.org/).
+# FPGA Examples
+A collection of examples implemented in [Clash](https://clash-lang.org/).
 
 <!-- omit in toc -->
 # Table of Contents

@@ -4,137 +4,137 @@
 `timescale 100fs/100fs
 module topEntity
     ( // Inputs
-      input  c$arg // clock
-    , input  c$arg_0 // reset
-    , input  c$arg_1 // enable
-    , input signed [63:0] c$arg_0_0_0
-    , input signed [63:0] c$arg_0_0_1
-    , input signed [63:0] c$arg_0_0_2
-    , input signed [63:0] c$arg_0_0_3
-    , input signed [63:0] c$arg_0_0_4
-    , input signed [63:0] c$arg_0_0_5
-    , input signed [63:0] c$arg_0_0_6
-    , input signed [63:0] c$arg_0_0_7
-    , input signed [63:0] c$arg_0_1_0
-    , input signed [63:0] c$arg_0_1_1
-    , input signed [63:0] c$arg_0_1_2
-    , input signed [63:0] c$arg_0_1_3
-    , input signed [63:0] c$arg_0_1_4
-    , input signed [63:0] c$arg_0_1_5
-    , input signed [63:0] c$arg_0_1_6
-    , input signed [63:0] c$arg_0_1_7
-    , input signed [63:0] c$arg_0_2_0
-    , input signed [63:0] c$arg_0_2_1
-    , input signed [63:0] c$arg_0_2_2
-    , input signed [63:0] c$arg_0_2_3
-    , input signed [63:0] c$arg_0_2_4
-    , input signed [63:0] c$arg_0_2_5
-    , input signed [63:0] c$arg_0_2_6
-    , input signed [63:0] c$arg_0_2_7
-    , input signed [63:0] c$arg_0_3_0
-    , input signed [63:0] c$arg_0_3_1
-    , input signed [63:0] c$arg_0_3_2
-    , input signed [63:0] c$arg_0_3_3
-    , input signed [63:0] c$arg_0_3_4
-    , input signed [63:0] c$arg_0_3_5
-    , input signed [63:0] c$arg_0_3_6
-    , input signed [63:0] c$arg_0_3_7
-    , input signed [63:0] c$arg_0_4_0
-    , input signed [63:0] c$arg_0_4_1
-    , input signed [63:0] c$arg_0_4_2
-    , input signed [63:0] c$arg_0_4_3
-    , input signed [63:0] c$arg_0_4_4
-    , input signed [63:0] c$arg_0_4_5
-    , input signed [63:0] c$arg_0_4_6
-    , input signed [63:0] c$arg_0_4_7
-    , input signed [63:0] c$arg_0_5_0
-    , input signed [63:0] c$arg_0_5_1
-    , input signed [63:0] c$arg_0_5_2
-    , input signed [63:0] c$arg_0_5_3
-    , input signed [63:0] c$arg_0_5_4
-    , input signed [63:0] c$arg_0_5_5
-    , input signed [63:0] c$arg_0_5_6
-    , input signed [63:0] c$arg_0_5_7
-    , input signed [63:0] c$arg_0_6_0
-    , input signed [63:0] c$arg_0_6_1
-    , input signed [63:0] c$arg_0_6_2
-    , input signed [63:0] c$arg_0_6_3
-    , input signed [63:0] c$arg_0_6_4
-    , input signed [63:0] c$arg_0_6_5
-    , input signed [63:0] c$arg_0_6_6
-    , input signed [63:0] c$arg_0_6_7
-    , input signed [63:0] c$arg_0_7_0
-    , input signed [63:0] c$arg_0_7_1
-    , input signed [63:0] c$arg_0_7_2
-    , input signed [63:0] c$arg_0_7_3
-    , input signed [63:0] c$arg_0_7_4
-    , input signed [63:0] c$arg_0_7_5
-    , input signed [63:0] c$arg_0_7_6
-    , input signed [63:0] c$arg_0_7_7
-    , input signed [63:0] c$arg_1_0_0
-    , input signed [63:0] c$arg_1_0_1
-    , input signed [63:0] c$arg_1_0_2
-    , input signed [63:0] c$arg_1_0_3
-    , input signed [63:0] c$arg_1_0_4
-    , input signed [63:0] c$arg_1_0_5
-    , input signed [63:0] c$arg_1_0_6
-    , input signed [63:0] c$arg_1_0_7
-    , input signed [63:0] c$arg_1_1_0
-    , input signed [63:0] c$arg_1_1_1
-    , input signed [63:0] c$arg_1_1_2
-    , input signed [63:0] c$arg_1_1_3
-    , input signed [63:0] c$arg_1_1_4
-    , input signed [63:0] c$arg_1_1_5
-    , input signed [63:0] c$arg_1_1_6
-    , input signed [63:0] c$arg_1_1_7
-    , input signed [63:0] c$arg_1_2_0
-    , input signed [63:0] c$arg_1_2_1
-    , input signed [63:0] c$arg_1_2_2
-    , input signed [63:0] c$arg_1_2_3
-    , input signed [63:0] c$arg_1_2_4
-    , input signed [63:0] c$arg_1_2_5
-    , input signed [63:0] c$arg_1_2_6
-    , input signed [63:0] c$arg_1_2_7
-    , input signed [63:0] c$arg_1_3_0
-    , input signed [63:0] c$arg_1_3_1
-    , input signed [63:0] c$arg_1_3_2
-    , input signed [63:0] c$arg_1_3_3
-    , input signed [63:0] c$arg_1_3_4
-    , input signed [63:0] c$arg_1_3_5
-    , input signed [63:0] c$arg_1_3_6
-    , input signed [63:0] c$arg_1_3_7
-    , input signed [63:0] c$arg_1_4_0
-    , input signed [63:0] c$arg_1_4_1
-    , input signed [63:0] c$arg_1_4_2
-    , input signed [63:0] c$arg_1_4_3
-    , input signed [63:0] c$arg_1_4_4
-    , input signed [63:0] c$arg_1_4_5
-    , input signed [63:0] c$arg_1_4_6
-    , input signed [63:0] c$arg_1_4_7
-    , input signed [63:0] c$arg_1_5_0
-    , input signed [63:0] c$arg_1_5_1
-    , input signed [63:0] c$arg_1_5_2
-    , input signed [63:0] c$arg_1_5_3
-    , input signed [63:0] c$arg_1_5_4
-    , input signed [63:0] c$arg_1_5_5
-    , input signed [63:0] c$arg_1_5_6
-    , input signed [63:0] c$arg_1_5_7
-    , input signed [63:0] c$arg_1_6_0
-    , input signed [63:0] c$arg_1_6_1
-    , input signed [63:0] c$arg_1_6_2
-    , input signed [63:0] c$arg_1_6_3
-    , input signed [63:0] c$arg_1_6_4
-    , input signed [63:0] c$arg_1_6_5
-    , input signed [63:0] c$arg_1_6_6
-    , input signed [63:0] c$arg_1_6_7
-    , input signed [63:0] c$arg_1_7_0
-    , input signed [63:0] c$arg_1_7_1
-    , input signed [63:0] c$arg_1_7_2
-    , input signed [63:0] c$arg_1_7_3
-    , input signed [63:0] c$arg_1_7_4
-    , input signed [63:0] c$arg_1_7_5
-    , input signed [63:0] c$arg_1_7_6
-    , input signed [63:0] c$arg_1_7_7
+      input  clk // clock
+    , input  rst // reset
+    , input  en // enable
+    , input signed [63:0] eta_0_0_0
+    , input signed [63:0] eta_0_0_1
+    , input signed [63:0] eta_0_0_2
+    , input signed [63:0] eta_0_0_3
+    , input signed [63:0] eta_0_0_4
+    , input signed [63:0] eta_0_0_5
+    , input signed [63:0] eta_0_0_6
+    , input signed [63:0] eta_0_0_7
+    , input signed [63:0] eta_0_1_0
+    , input signed [63:0] eta_0_1_1
+    , input signed [63:0] eta_0_1_2
+    , input signed [63:0] eta_0_1_3
+    , input signed [63:0] eta_0_1_4
+    , input signed [63:0] eta_0_1_5
+    , input signed [63:0] eta_0_1_6
+    , input signed [63:0] eta_0_1_7
+    , input signed [63:0] eta_0_2_0
+    , input signed [63:0] eta_0_2_1
+    , input signed [63:0] eta_0_2_2
+    , input signed [63:0] eta_0_2_3
+    , input signed [63:0] eta_0_2_4
+    , input signed [63:0] eta_0_2_5
+    , input signed [63:0] eta_0_2_6
+    , input signed [63:0] eta_0_2_7
+    , input signed [63:0] eta_0_3_0
+    , input signed [63:0] eta_0_3_1
+    , input signed [63:0] eta_0_3_2
+    , input signed [63:0] eta_0_3_3
+    , input signed [63:0] eta_0_3_4
+    , input signed [63:0] eta_0_3_5
+    , input signed [63:0] eta_0_3_6
+    , input signed [63:0] eta_0_3_7
+    , input signed [63:0] eta_0_4_0
+    , input signed [63:0] eta_0_4_1
+    , input signed [63:0] eta_0_4_2
+    , input signed [63:0] eta_0_4_3
+    , input signed [63:0] eta_0_4_4
+    , input signed [63:0] eta_0_4_5
+    , input signed [63:0] eta_0_4_6
+    , input signed [63:0] eta_0_4_7
+    , input signed [63:0] eta_0_5_0
+    , input signed [63:0] eta_0_5_1
+    , input signed [63:0] eta_0_5_2
+    , input signed [63:0] eta_0_5_3
+    , input signed [63:0] eta_0_5_4
+    , input signed [63:0] eta_0_5_5
+    , input signed [63:0] eta_0_5_6
+    , input signed [63:0] eta_0_5_7
+    , input signed [63:0] eta_0_6_0
+    , input signed [63:0] eta_0_6_1
+    , input signed [63:0] eta_0_6_2
+    , input signed [63:0] eta_0_6_3
+    , input signed [63:0] eta_0_6_4
+    , input signed [63:0] eta_0_6_5
+    , input signed [63:0] eta_0_6_6
+    , input signed [63:0] eta_0_6_7
+    , input signed [63:0] eta_0_7_0
+    , input signed [63:0] eta_0_7_1
+    , input signed [63:0] eta_0_7_2
+    , input signed [63:0] eta_0_7_3
+    , input signed [63:0] eta_0_7_4
+    , input signed [63:0] eta_0_7_5
+    , input signed [63:0] eta_0_7_6
+    , input signed [63:0] eta_0_7_7
+    , input signed [63:0] eta_1_0_0
+    , input signed [63:0] eta_1_0_1
+    , input signed [63:0] eta_1_0_2
+    , input signed [63:0] eta_1_0_3
+    , input signed [63:0] eta_1_0_4
+    , input signed [63:0] eta_1_0_5
+    , input signed [63:0] eta_1_0_6
+    , input signed [63:0] eta_1_0_7
+    , input signed [63:0] eta_1_1_0
+    , input signed [63:0] eta_1_1_1
+    , input signed [63:0] eta_1_1_2
+    , input signed [63:0] eta_1_1_3
+    , input signed [63:0] eta_1_1_4
+    , input signed [63:0] eta_1_1_5
+    , input signed [63:0] eta_1_1_6
+    , input signed [63:0] eta_1_1_7
+    , input signed [63:0] eta_1_2_0
+    , input signed [63:0] eta_1_2_1
+    , input signed [63:0] eta_1_2_2
+    , input signed [63:0] eta_1_2_3
+    , input signed [63:0] eta_1_2_4
+    , input signed [63:0] eta_1_2_5
+    , input signed [63:0] eta_1_2_6
+    , input signed [63:0] eta_1_2_7
+    , input signed [63:0] eta_1_3_0
+    , input signed [63:0] eta_1_3_1
+    , input signed [63:0] eta_1_3_2
+    , input signed [63:0] eta_1_3_3
+    , input signed [63:0] eta_1_3_4
+    , input signed [63:0] eta_1_3_5
+    , input signed [63:0] eta_1_3_6
+    , input signed [63:0] eta_1_3_7
+    , input signed [63:0] eta_1_4_0
+    , input signed [63:0] eta_1_4_1
+    , input signed [63:0] eta_1_4_2
+    , input signed [63:0] eta_1_4_3
+    , input signed [63:0] eta_1_4_4
+    , input signed [63:0] eta_1_4_5
+    , input signed [63:0] eta_1_4_6
+    , input signed [63:0] eta_1_4_7
+    , input signed [63:0] eta_1_5_0
+    , input signed [63:0] eta_1_5_1
+    , input signed [63:0] eta_1_5_2
+    , input signed [63:0] eta_1_5_3
+    , input signed [63:0] eta_1_5_4
+    , input signed [63:0] eta_1_5_5
+    , input signed [63:0] eta_1_5_6
+    , input signed [63:0] eta_1_5_7
+    , input signed [63:0] eta_1_6_0
+    , input signed [63:0] eta_1_6_1
+    , input signed [63:0] eta_1_6_2
+    , input signed [63:0] eta_1_6_3
+    , input signed [63:0] eta_1_6_4
+    , input signed [63:0] eta_1_6_5
+    , input signed [63:0] eta_1_6_6
+    , input signed [63:0] eta_1_6_7
+    , input signed [63:0] eta_1_7_0
+    , input signed [63:0] eta_1_7_1
+    , input signed [63:0] eta_1_7_2
+    , input signed [63:0] eta_1_7_3
+    , input signed [63:0] eta_1_7_4
+    , input signed [63:0] eta_1_7_5
+    , input signed [63:0] eta_1_7_6
+    , input signed [63:0] eta_1_7_7
 
       // Outputs
     , output wire signed [63:0] result_0_0
@@ -217,7 +217,7 @@ module topEntity
   wire [4095:0] b;
   wire [4095:0] mBT;
   wire [4095:0] result_8;
-  wire [8191:0] c$arg_2;
+  wire [8191:0] eta;
   wire [4095:0] result;
   wire [511:0] result_0;
   wire [511:0] result_1;
@@ -228,54 +228,55 @@ module topEntity
   wire [511:0] result_6;
   wire [511:0] result_7;
 
-  assign c$arg_2 = {{{c$arg_0_0_0,
-                      c$arg_0_0_1,   c$arg_0_0_2,   c$arg_0_0_3,
-                      c$arg_0_0_4,   c$arg_0_0_5,   c$arg_0_0_6,
-                      c$arg_0_0_7},   {c$arg_0_1_0,   c$arg_0_1_1,
-                                       c$arg_0_1_2,   c$arg_0_1_3,   c$arg_0_1_4,
-                                       c$arg_0_1_5,   c$arg_0_1_6,   c$arg_0_1_7},
-                     {c$arg_0_2_0,   c$arg_0_2_1,   c$arg_0_2_2,
-                      c$arg_0_2_3,   c$arg_0_2_4,   c$arg_0_2_5,
-                      c$arg_0_2_6,   c$arg_0_2_7},   {c$arg_0_3_0,
-                                                      c$arg_0_3_1,   c$arg_0_3_2,   c$arg_0_3_3,
-                                                      c$arg_0_3_4,   c$arg_0_3_5,   c$arg_0_3_6,
-                                                      c$arg_0_3_7},   {c$arg_0_4_0,   c$arg_0_4_1,
-                                                                       c$arg_0_4_2,   c$arg_0_4_3,   c$arg_0_4_4,
-                                                                       c$arg_0_4_5,   c$arg_0_4_6,   c$arg_0_4_7},
-                     {c$arg_0_5_0,   c$arg_0_5_1,   c$arg_0_5_2,
-                      c$arg_0_5_3,   c$arg_0_5_4,   c$arg_0_5_5,
-                      c$arg_0_5_6,   c$arg_0_5_7},   {c$arg_0_6_0,
-                                                      c$arg_0_6_1,   c$arg_0_6_2,   c$arg_0_6_3,
-                                                      c$arg_0_6_4,   c$arg_0_6_5,   c$arg_0_6_6,
-                                                      c$arg_0_6_7},   {c$arg_0_7_0,   c$arg_0_7_1,
-                                                                       c$arg_0_7_2,   c$arg_0_7_3,   c$arg_0_7_4,
-                                                                       c$arg_0_7_5,   c$arg_0_7_6,   c$arg_0_7_7}},
-                    {{c$arg_1_0_0,   c$arg_1_0_1,   c$arg_1_0_2,
-                      c$arg_1_0_3,   c$arg_1_0_4,   c$arg_1_0_5,
-                      c$arg_1_0_6,   c$arg_1_0_7},   {c$arg_1_1_0,
-                                                      c$arg_1_1_1,   c$arg_1_1_2,   c$arg_1_1_3,
-                                                      c$arg_1_1_4,   c$arg_1_1_5,   c$arg_1_1_6,
-                                                      c$arg_1_1_7},   {c$arg_1_2_0,   c$arg_1_2_1,
-                                                                       c$arg_1_2_2,   c$arg_1_2_3,   c$arg_1_2_4,
-                                                                       c$arg_1_2_5,   c$arg_1_2_6,   c$arg_1_2_7},
-                     {c$arg_1_3_0,   c$arg_1_3_1,   c$arg_1_3_2,
-                      c$arg_1_3_3,   c$arg_1_3_4,   c$arg_1_3_5,
-                      c$arg_1_3_6,   c$arg_1_3_7},   {c$arg_1_4_0,
-                                                      c$arg_1_4_1,   c$arg_1_4_2,   c$arg_1_4_3,
-                                                      c$arg_1_4_4,   c$arg_1_4_5,   c$arg_1_4_6,
-                                                      c$arg_1_4_7},   {c$arg_1_5_0,   c$arg_1_5_1,
-                                                                       c$arg_1_5_2,   c$arg_1_5_3,   c$arg_1_5_4,
-                                                                       c$arg_1_5_5,   c$arg_1_5_6,   c$arg_1_5_7},
-                     {c$arg_1_6_0,   c$arg_1_6_1,   c$arg_1_6_2,
-                      c$arg_1_6_3,   c$arg_1_6_4,   c$arg_1_6_5,
-                      c$arg_1_6_6,   c$arg_1_6_7},   {c$arg_1_7_0,
-                                                      c$arg_1_7_1,   c$arg_1_7_2,   c$arg_1_7_3,
-                                                      c$arg_1_7_4,   c$arg_1_7_5,   c$arg_1_7_6,
-                                                      c$arg_1_7_7}}};
+  assign eta = {{{eta_0_0_0,   eta_0_0_1,
+                  eta_0_0_2,   eta_0_0_3,   eta_0_0_4,
+                  eta_0_0_5,   eta_0_0_6,   eta_0_0_7},
+                 {eta_0_1_0,   eta_0_1_1,   eta_0_1_2,
+                  eta_0_1_3,   eta_0_1_4,   eta_0_1_5,
+                  eta_0_1_6,   eta_0_1_7},   {eta_0_2_0,
+                                              eta_0_2_1,   eta_0_2_2,   eta_0_2_3,
+                                              eta_0_2_4,   eta_0_2_5,   eta_0_2_6,
+                                              eta_0_2_7},   {eta_0_3_0,   eta_0_3_1,
+                                                             eta_0_3_2,   eta_0_3_3,   eta_0_3_4,
+                                                             eta_0_3_5,   eta_0_3_6,   eta_0_3_7},
+                 {eta_0_4_0,   eta_0_4_1,   eta_0_4_2,
+                  eta_0_4_3,   eta_0_4_4,   eta_0_4_5,
+                  eta_0_4_6,   eta_0_4_7},   {eta_0_5_0,
+                                              eta_0_5_1,   eta_0_5_2,   eta_0_5_3,
+                                              eta_0_5_4,   eta_0_5_5,   eta_0_5_6,
+                                              eta_0_5_7},   {eta_0_6_0,   eta_0_6_1,
+                                                             eta_0_6_2,   eta_0_6_3,   eta_0_6_4,
+                                                             eta_0_6_5,   eta_0_6_6,   eta_0_6_7},
+                 {eta_0_7_0,   eta_0_7_1,   eta_0_7_2,
+                  eta_0_7_3,   eta_0_7_4,   eta_0_7_5,
+                  eta_0_7_6,   eta_0_7_7}},   {{eta_1_0_0,
+                                                eta_1_0_1,   eta_1_0_2,   eta_1_0_3,
+                                                eta_1_0_4,   eta_1_0_5,   eta_1_0_6,
+                                                eta_1_0_7},   {eta_1_1_0,   eta_1_1_1,
+                                                               eta_1_1_2,   eta_1_1_3,   eta_1_1_4,
+                                                               eta_1_1_5,   eta_1_1_6,   eta_1_1_7},
+                                               {eta_1_2_0,   eta_1_2_1,   eta_1_2_2,
+                                                eta_1_2_3,   eta_1_2_4,   eta_1_2_5,
+                                                eta_1_2_6,   eta_1_2_7},   {eta_1_3_0,
+                                                                            eta_1_3_1,   eta_1_3_2,   eta_1_3_3,
+                                                                            eta_1_3_4,   eta_1_3_5,   eta_1_3_6,
+                                                                            eta_1_3_7},   {eta_1_4_0,   eta_1_4_1,
+                                                                                           eta_1_4_2,   eta_1_4_3,
+                                                                                           eta_1_4_4,   eta_1_4_5,
+                                                                                           eta_1_4_6,   eta_1_4_7},
+                                               {eta_1_5_0,   eta_1_5_1,   eta_1_5_2,
+                                                eta_1_5_3,   eta_1_5_4,   eta_1_5_5,
+                                                eta_1_5_6,   eta_1_5_7},   {eta_1_6_0,
+                                                                            eta_1_6_1,   eta_1_6_2,   eta_1_6_3,
+                                                                            eta_1_6_4,   eta_1_6_5,   eta_1_6_6,
+                                                                            eta_1_6_7},   {eta_1_7_0,   eta_1_7_1,
+                                                                                           eta_1_7_2,   eta_1_7_3,
+                                                                                           eta_1_7_4,   eta_1_7_5,
+                                                                                           eta_1_7_6,   eta_1_7_7}}};
 
   // register begin
-  always @(posedge c$arg or  posedge  c$arg_0) begin : s1_register
-    if ( c$arg_0) begin
+  always @(posedge clk or  posedge  rst) begin : s1_register
+    if ( rst) begin
       s1 <= {{64'sd1,   64'sd2,   64'sd3,   64'sd4,   64'sd5,   64'sd6,   64'sd7,
     64'sd8},   {64'sd1,   64'sd2,   64'sd3,   64'sd4,   64'sd5,   64'sd6,
                 64'sd7,   64'sd8},   {64'sd1,   64'sd2,   64'sd3,   64'sd4,
@@ -287,15 +288,15 @@ module topEntity
    {64'sd1,   64'sd2,   64'sd3,   64'sd4,   64'sd5,   64'sd6,   64'sd7,
     64'sd8},   {64'sd1,   64'sd2,   64'sd3,   64'sd4,   64'sd5,   64'sd6,
                 64'sd7,   64'sd8}};
-    end else if (c$arg_1) begin
+    end else if (en) begin
       s1 <= result_8;
     end
   end
   // register end
 
-  assign a = c$arg_2[8191:4096];
+  assign a = eta[8191:4096];
 
-  assign b = c$arg_2[4095:0];
+  assign b = eta[4095:0];
 
   // transpose begin
   genvar row_index;

@@ -1,3 +1,4 @@
+{-# LANGUAGE ViewPatterns #-}
 {-# OPTIONS_GHC -Wno-missing-signatures #-}
 
 module Example.BitOfByte (topEntity, test) where
@@ -25,7 +26,7 @@ bitAt 6 $(bitPattern "......1.") = True
 bitAt 7 $(bitPattern ".......1") = True
 bitAt _ _ = False
 
-bitOfByte :: (HiddenClockResetEnable dom) => Signal dom (Unsigned 3, Unsigned 8) -> Signal dom Bool
+bitOfByte :: HiddenClockResetEnable dom => Signal dom (Unsigned 3, Unsigned 8) -> Signal dom Bool
 bitOfByte =
   moore
     (\_ inp -> inp)
